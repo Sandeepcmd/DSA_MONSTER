@@ -12,9 +12,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0072-edit-distance) |
 | [1170-shortest-common-supersequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/1170-shortest-common-supersequence) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0072-edit-distance) |
 | [1170-shortest-common-supersequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/1170-shortest-common-supersequence) |
 <!---LeetCode Topics End-->
