@@ -12,11 +12,21 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0072-edit-distance) |
 | [1170-shortest-common-supersequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/1170-shortest-common-supersequence) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0072-edit-distance) |
 | [1170-shortest-common-supersequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/1170-shortest-common-supersequence) |
+## Greedy
+|  |
+| ------- |
+| [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
+## Recursion
+|  |
+| ------- |
+| [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
 <!---LeetCode Topics End-->
