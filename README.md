@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0001-two-sum) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0300-longest-increasing-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0368-largest-divisible-subset) |
 ## Hash Table
@@ -22,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
 | [0072-edit-distance](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0072-edit-distance) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0300-longest-increasing-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0368-largest-divisible-subset) |
 | [1170-shortest-common-supersequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/1170-shortest-common-supersequence) |
