@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0300-longest-increasing-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0368-largest-divisible-subset) |
+| [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
 ## Hash Table
 |  |
@@ -52,5 +53,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
+## Queue
+|  |
+| ------- |
+| [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
+## Monotonic Queue
+|  |
+| ------- |
+| [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 <!---LeetCode Topics End-->
