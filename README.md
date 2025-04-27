@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0001-two-sum) |
 | [0039-combination-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0039-combination-sum) |
+| [0090-subsets-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0090-subsets-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0216-combination-sum-iii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0216-combination-sum-iii) |
 | [0300-longest-increasing-subsequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0300-longest-increasing-subsequence) |
@@ -69,5 +70,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0039-combination-sum) |
+| [0090-subsets-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0090-subsets-ii) |
 | [0216-combination-sum-iii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0216-combination-sum-iii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0090-subsets-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0090-subsets-ii) |
 <!---LeetCode Topics End-->
