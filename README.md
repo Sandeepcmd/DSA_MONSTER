@@ -14,11 +14,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0368-largest-divisible-subset) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
+| [2856-count-complete-subarrays-in-an-array](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2856-count-complete-subarrays-in-an-array) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0001-two-sum) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
+| [2856-count-complete-subarrays-in-an-array](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2856-count-complete-subarrays-in-an-array) |
 ## String
 |  |
 | ------- |
@@ -63,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
+| [2856-count-complete-subarrays-in-an-array](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2856-count-complete-subarrays-in-an-array) |
 ## Queue
 |  |
 | ------- |
