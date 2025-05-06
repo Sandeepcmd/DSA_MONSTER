@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0216-combination-sum-iii) |
 | [0300-longest-increasing-subsequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0300-longest-increasing-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0368-largest-divisible-subset) |
+| [2048-build-array-from-permutation](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2048-build-array-from-permutation) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2856-count-complete-subarrays-in-an-array) |
@@ -134,4 +135,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0662-maximum-width-of-binary-tree) |
+## Simulation
+|  |
+| ------- |
+| [2048-build-array-from-permutation](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2048-build-array-from-permutation) |
 <!---LeetCode Topics End-->
