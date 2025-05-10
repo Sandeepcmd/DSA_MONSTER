@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2856-count-complete-subarrays-in-an-array) |
+| [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Hash Table
 |  |
@@ -46,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
+| [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 ## Recursion
 |  |
 | ------- |
