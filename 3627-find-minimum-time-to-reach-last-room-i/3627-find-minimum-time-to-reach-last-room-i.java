@@ -1,43 +1,53 @@
 class Solution {
-   static public int minTimeToReach(int[][] moveTime) {
-        int r = moveTime.length, c = moveTime[0].length;
-        int[][] minimumTime = new int[r][c];
-        for (int[] is : minimumTime) {
-            Arrays.fill(is, Integer.MAX_VALUE);
+    class Tuple {
+        int first, second, third;
+        Tuple(int first, int second, int third) {
+            this.first = first;
+            this.second = second;
+            this.third = third;
+        }
+    }
+    public int minTimeToReach(int[][] moveTime) {
+        int n = moveTime.length;
+        int m = moveTime[0].length;
+
+        int[][] minTime = new int[n][m];
+        for (int[] row : minTime) 
+        {
+            Arrays.fill(row, Integer.MAX_VALUE);
         }
 
-        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.steps - b.steps);
-        pq.add(new Pair(-1, 0, 0));
-        minimumTime[0][0] = 0;
+        PriorityQueue<Tuple> pq = new PriorityQueue<>((t1, t2) -> t1.third - t2.third);
+        pq.offer(new Tuple(0, 0, 0));
+        minTime[0][0] = 0;
+
+        int[] drow = {-1, 0, 1, 0};
+        int[] dcol = {0, -1, 0, 1};
 
         while (!pq.isEmpty()) {
-            Pair top = pq.poll();
-            int i = top.i, j = top.j, nextStep = top.steps + 1;
-            if (i + 1 < r) update(i + 1, j, pq, nextStep, moveTime, minimumTime);
-            if (i - 1 >= 0) update(i - 1, j, pq, nextStep, moveTime, minimumTime);
-            if (j - 1 >= 0) update(i, j - 1, pq, nextStep, moveTime, minimumTime);
-            if (j + 1 < c)  update(i, j + 1, pq, nextStep, moveTime, minimumTime);
-            if(minimumTime[r-1][c-1] != Integer.MAX_VALUE) return minimumTime[r-1][c-1] + 1;
+            Tuple curr = pq.poll();
+            int i = curr.first;
+            int j = curr.second;
+            int t = curr.third;
+             
+            if (i == n - 1 && j == m - 1) {
+                return t;
+            }
+            for (int k = 0; k < 4; k++) {
+                int nrow = i + drow[k];
+                int ncol = j + dcol[k];
+                if (nrow >= 0 && ncol >= 0 && nrow < n && ncol < m) {
+                   int waitTime = t < moveTime[nrow][ncol] ? moveTime[nrow][ncol] : t;
+                   int nt = waitTime + 1;
+                   
+                    if (nt < minTime[nrow][ncol]) {
+                        minTime[nrow][ncol] = nt;
+                        pq.offer(new Tuple(nrow, ncol, nt));
+                    }
+                }
+            }
         }
-        return minimumTime[r-1][c-1] + 1;
-    }
 
-    static void update(int i, int j, PriorityQueue<Pair> pq, int nextStep, int[][] moveTime, int[][] minimumTime){
-        if (nextStep < moveTime[i][j]) nextStep = moveTime[i][j];
-        if (minimumTime[i][j] > nextStep) {
-            pq.add(new Pair(nextStep, i, j));
-            minimumTime[i][j] = nextStep;
-        }
-    }
-
-}
-
-class Pair {
-    int steps = 0, i = -1, j = -1;
-
-    public Pair(int steps, int i, int j) {
-        this.steps = steps;
-        this.i = i;
-        this.j = j;
+        return -1; 
     }
 }
