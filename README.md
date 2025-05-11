@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0216-combination-sum-iii) |
 | [0300-longest-increasing-subsequence](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0300-longest-increasing-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0368-largest-divisible-subset) |
+| [1293-three-consecutive-odds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/1293-three-consecutive-odds) |
 | [2048-build-array-from-permutation](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2048-build-array-from-permutation) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/2626-count-the-number-of-good-subarrays) |
