@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0001-two-sum) |
 | [0039-combination-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0039-combination-sum) |
+| [0063-unique-paths-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0063-unique-paths-ii) |
 | [0079-word-search](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0090-subsets-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -42,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0044-wildcard-matching) |
+| [0063-unique-paths-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0063-unique-paths-ii) |
 | [0072-edit-distance](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0072-edit-distance) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0124-binary-tree-maximum-path-sum) |
@@ -117,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0063-unique-paths-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0063-unique-paths-ii) |
 | [0079-word-search](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0079-word-search) |
 | [0733-flood-fill](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0733-flood-fill) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
