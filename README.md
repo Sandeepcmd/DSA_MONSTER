@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0001-two-sum) |
 | [0039-combination-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0040-combination-sum-ii) |
 | [0063-unique-paths-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0063-unique-paths-ii) |
 | [0079-word-search](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0090-subsets-ii) |
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0040-combination-sum-ii) |
 | [0079-word-search](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/Sandeepcmd/DSA_MONSTER/tree/master/0131-palindrome-partitioning) |
