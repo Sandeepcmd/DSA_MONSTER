@@ -1,39 +1,37 @@
 import java.util.*;
 
 class Solution {
-    private static final long MOD = 1_000_000_007L;
-
     public int specialTriplets(int[] nums) {
         int n = nums.length;
-        Map<Integer, List<Integer>> idxMap = new HashMap<>();
+        long mod = 1_000_000_007L;
+        HashMap<Integer, List<Integer>> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            idxMap.computeIfAbsent(nums[i], k -> new ArrayList<>()).add(i);
+            map.computeIfAbsent(nums[i], k -> new ArrayList<>()).add(i);
         }
 
-        long ans = 0;
+        long count = 0;
         for (int j = 1; j < n - 1; j++) {
-            int target = nums[j] * 2;
-            List<Integer> pos = idxMap.get(target);
-            if (pos == null) continue;
+            int ele = nums[j] * 2;
+            List<Integer> list = map.get(ele);
+            if (list == null) continue;
 
-            int lb = lowerBound(pos, j);
-            long left = lb;
-            long right = pos.size() - lb;
-            if (lb < pos.size() && pos.get(lb) == j) right--;
+            int idx = lowerBound(list, j);
+            long freqPrev = idx;
+            long freqNext = list.size() - idx;
+            if (idx < list.size() && list.get(idx) == j) freqNext--;
 
-            ans = (ans + (left * right) % MOD) % MOD;
+            count = (count + (freqPrev * freqNext) % mod) % mod;
         }
-
-        return (int) ans;
+        return (int) count;
     }
 
     private int lowerBound(List<Integer> list, int target) {
-        int lo = 0, hi = list.size();
-        while (lo < hi) {
-            int mid = lo + (hi - lo) / 2;
-            if (list.get(mid) < target) lo = mid + 1;
-            else hi = mid;
+        int low = 0, high = list.size();
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (list.get(mid) < target) low = mid + 1;
+            else high = mid;
         }
-        return lo;
+        return low;
     }
 }
