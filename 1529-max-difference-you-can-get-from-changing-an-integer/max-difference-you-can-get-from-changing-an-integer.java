@@ -9,9 +9,8 @@ class Solution {
 
         int digit = -1;
         for (int pos = c1; pos > 0; pos--) {
-            int div = 1;
-            for (int j = 1; j < pos; j++) div *= 10;
-            int a = (num / div) % 10;
+            int d = (int) Math.pow(10, pos - 1);
+            int a = (num / d) % 10;
             if (a != 9) {
                 digit = a;
                 break;
@@ -21,10 +20,9 @@ class Solution {
         int max = 0;
         int n2 = num;
         for (int pos = c1; pos > 0; pos--) {
-            int div = 1;
-            for (int j = 1; j < pos; j++) div *= 10;
-            int a = n2 / div;
-            n2 %= div;
+            int d = (int) Math.pow(10, pos - 1);
+            int a = n2 / d;
+            n2 %= d;
             if (a == digit) a = 9;
             max = max * 10 + a;
         }
@@ -34,8 +32,7 @@ class Solution {
     }
 
     private int minimum(int c, int num) {
-        int div = 1;
-        for (int j = 1; j < c; j++) div *= 10;
+        int div = (int) Math.pow(10, c - 1);
         int first = num / div;
 
         int changeDigit;
@@ -47,8 +44,7 @@ class Solution {
             changeDigit = -1;
             changeTo = 0;
             for (int pos = c - 1; pos > 0 && changeDigit == -1; pos--) {
-                int d = 1;
-                for (int k = 1; k < pos; k++) d *= 10;
+                int d = (int) Math.pow(10, pos - 1);
                 int a = (num / d) % 10;
                 if (a != 0 && a != 1) changeDigit = a;
             }
@@ -57,8 +53,7 @@ class Solution {
         int n2 = num;
         int min = 0;
         for (int pos = c; pos > 0; pos--) {
-            int d = 1;
-            for (int k = 1; k < pos; k++) d *= 10;
+            int d = (int) Math.pow(10, pos - 1);
             int a = n2 / d;
             n2 %= d;
             if (a == changeDigit) a = changeTo;
