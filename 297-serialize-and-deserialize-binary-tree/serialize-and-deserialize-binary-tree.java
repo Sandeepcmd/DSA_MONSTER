@@ -11,59 +11,54 @@ public class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        if (root == null)
-            return "#";
-
-        StringBuilder sb = new StringBuilder();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-
-        while (!queue.isEmpty()) {
-            TreeNode curr = queue.poll();
+        if(root == null)return "#";
+        StringBuilder ob = new StringBuilder();
+        Queue<TreeNode> que = new LinkedList<>();
+        que.offer(root);
+        while (que.size() > 0) {
+            TreeNode curr = que.remove();
             if (curr == null) {
-                sb.append("#,");
+                ob.append("#,");
             } else {
-                sb.append(curr.val).append(",");
-                queue.offer(curr.left);
-                queue.offer(curr.right);
+                ob.append(curr.val).append(",");
+                que.offer(curr.left);
+                que.offer(curr.right);
             }
-        }
 
-       
-        return sb.toString();
+        }
+        
+        return ob.toString();
     }
 
-    // Decodes your encoded data to tree.
+    
     public TreeNode deserialize(String data) {
-        if (data == null || data.length() == 0 || data.equals("#")) {
+         if (data == null || data.length() == 0 || data.equals("#")) {
             return null;
         }
-
-        String[] nodes = data.split(",");
-        TreeNode root = new TreeNode(Integer.parseInt(nodes[0]));
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-
-        int i = 1;
-        while (!queue.isEmpty() && i < nodes.length) {
-            TreeNode current = queue.poll();
-            if (!nodes[i].equals("#")) {
-                TreeNode left = new TreeNode(Integer.parseInt(nodes[i]));
-                current.left = left;
-                queue.offer(left);
+          String arr[] = data.split(",");
+          int n = arr.length;
+          int i = 1;
+          Queue<TreeNode> que = new LinkedList<>();
+          TreeNode root = new TreeNode(Integer.parseInt(arr[0]));
+          que.offer(root);
+          while(que.size() > 0 && i < arr.length)
+          {
+            TreeNode curr = que.poll();
+            if(i != n && !arr[i].equals("#")){
+                TreeNode left = new TreeNode(Integer.parseInt(arr[i]));
+                curr.left = left;
+                que.offer(left);
             }
             i++;
-            if (i < nodes.length && !nodes[i].equals("#")) {
-                TreeNode right = new TreeNode(Integer.parseInt(nodes[i]));
-                current.right = right;
-                queue.offer(right);
+             if(i != n && !arr[i].equals("#")){
+                TreeNode right = new TreeNode(Integer.parseInt(arr[i]));
+                curr.right = right;
+                que.offer(right);
             }
             i++;
-        }
-
-        return root;
+          }
+          return root;
     }
-
 }
 
 // Your Codec object will be instantiated and called as such:
