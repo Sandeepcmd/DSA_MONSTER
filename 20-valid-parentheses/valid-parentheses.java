@@ -5,34 +5,28 @@ class Solution {
         for(int i=0;i<n;i++)
         {
             char c = s.charAt(i);
-            if(c == '(' || c == '[' || c == '{')
-            {
+            if(c == '('||c == '{' || c == '['){
                 st.push(c);
             }
             else
-            {
+            {  if(st.size() == 0)return false;
                 if(c == ')')
                 {
-                    if(st.size() == 0) return false;
-                    int top = st.pop();
-                    if(top != '(') return false;
-                   
+                   if(st.peek() != '(')return false;
+                   st.pop();
                 }
-                else if(c == ']')
+                if(c == ']')
                 {
-                    if(st.size() == 0) return false;
-                    int top = st.pop();
-                    if(top != '[') return false;
+                    if(st.peek() != '[')return false;
+                   st.pop();
                 }
-                 else
+                if(c == '}')
                 {
-                    if(st.size() == 0) return false;
-                    int top = st.pop();
-                    if(top != '{') return false;
+                     if(st.peek() != '{')return false;
+                   st.pop();
                 }
             }
         }
-        if(st.size() != 0)return false;
-        return true;
+        return (st.size()==0)?true:false;
     }
 }
