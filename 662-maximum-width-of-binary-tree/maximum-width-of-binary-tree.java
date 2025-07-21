@@ -15,42 +15,34 @@
  */
 class Solution {
     class Pair{
-        TreeNode first;
-        int second;
-        Pair(TreeNode first,int second)
+        TreeNode node;
+        int index;
+        Pair(TreeNode node,int index)
         {
-            this.first = first;
-            this.second = second;
+            this.node = node;
+            this.index = index;
         }
     }
     public int widthOfBinaryTree(TreeNode root) {
-        int max = 0;
         Queue<Pair> que = new LinkedList<>();
         que.offer(new Pair(root,0));
-        while(que.size()>0)
+        int max = Integer.MIN_VALUE;
+        while(que.size() > 0)
         {
             int n = que.size();
-            int start = que.peek().second;
-            int last = 0;
-            while(n-->0)
+            int first = que.peek().index;
+            int second = n;
+            while(n-- > 0)
             {
-                 Pair p = que.remove();
-                 TreeNode curr = p.first;
-                 int dis = p.second;
-                 last = dis;
-                 if(curr.left != null)
-                 {
-                    que.offer(new Pair(curr.left,2*dis+1));
-                 }
-                 if(curr.right != null)
-                 {
-                    que.offer(new Pair(curr.right,2*dis+2));
-                 }
+                Pair curr = que.remove();
+                TreeNode node = curr.node;
+                int index = curr.index;
+                second = index;
+                if(node.left != null)que.offer(new Pair(node.left,2*index+1));
+                if(node.right != null)que.offer(new Pair(node.right,2*index+2));
             }
-            int width = last - start;
-            max = Math.max(max,width);
+            max = Math.max(max,second-first+1);
         }
-        return max+1;
-
+        return max;
     }
 }
