@@ -14,71 +14,76 @@
  * }
  */
 class Solution {
-    class Info {
-        TreeNode node;
+    class Pair{
+        int val;
         int level;
+        Pair(int val,int level)
+        {
+            this.val = val;
+            this.level = level;
+        }
+    }
+    class Pair2{
+        TreeNode node;
         int hd;
-        Info(TreeNode node,int level,int hd)
+        Pair2(TreeNode node,int hd)
         {
             this.node = node;
-            this.level = level;
             this.hd = hd;
         }
     }
-    class Pair{
-        int first;
-        int level;
-        Pair(int first,int level)
-        {
-            this.first = first;
-            this.level = level;
-        }
-    }
-
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        HashMap<Integer, List<Pair>> map = new HashMap<>();
+        List<List<Integer>> list = new ArrayList<>();
+        HashMap<Integer,List<Pair>> map = new HashMap<>();
+        Queue<Pair2> que = new LinkedList<>();
+        que.offer(new Pair2(root,0));
+        int level = 0;
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        Queue<Info> que = new LinkedList<>();
-        que.offer(new Info(root, 0, 0));
-        while (que.size() > 0) {
-            Info curr = que.remove();
-            TreeNode node = curr.node;
-            int hd = curr.hd;
-            int level = curr.level;
-            min = Math.min(min,hd);
-            max = Math.max(max,hd);
-            map.computeIfAbsent(hd, k -> new ArrayList<>());
-            map.get(hd).add(new Pair(node.val, level));
-            if (node.left != null) {
-                que.offer(new Info(node.left, level + 1, hd - 1));
+        while(que.size() > 0)
+        {
+            int n = que.size();
+            while(n-- > 0)
+            {
+                 Pair2 curr = que.remove();
+                TreeNode node = curr.node;
+                int hd = curr.hd;
+                min = Math.min(min,hd);
+                max = Math.max(max,hd);
+                if(map.containsKey(hd)){
+                    List<Pair> ans = map.get(hd);
+                    ans.add(new Pair(node.val,level));
+                    map.put(hd,ans);
+                }
+                else
+                {
+                    List<Pair> temp = new ArrayList<>();
+                    temp.add(new Pair(node.val,level));
+                    map.put(hd,temp);
+                }
+                if(node.left != null)que.offer(new Pair2(node.left,hd-1));
+                if(node.right != null)que.offer(new Pair2(node.right,hd+1));
+
             }
-            if (node.right != null) {
-                que.offer(new Info(node.right, level + 1, hd + 1));
-            }
+            level++;
         }
-        List<List<Integer>> ans = new ArrayList<>();
         for(int i=min;i<=max;i++)
         {
             List<Pair> temp = new ArrayList<>();
             temp = map.get(i);
-            Collections.sort(temp,(p1,p2)->{
-                  if(p1.level == p2.level)
-                  {
-                    return p1.first-p2.first;
-                  }
-                  else
-                  {
-                    return p1.level-p2.level;
-                  }
+             Collections.sort(temp,(Pair p,Pair q)->{
+                if(p.level == q.level)return p.val-q.val;
+                else return p.level-q.level;
             });
             List<Integer> temp2 = new ArrayList<>();
-            for(Pair p : temp)
+            for(int j=0;j<temp.size();j++)
             {
-                temp2.add(p.first);
-            } 
-            ans.add(temp2);
+                Pair p = temp.get(j);
+                temp2.add(p.val);
+            }
+            list.add(temp2);
+           
         }
-        return ans;
+        return list;
     }
 }
