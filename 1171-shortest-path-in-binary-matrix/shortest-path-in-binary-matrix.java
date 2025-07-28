@@ -16,8 +16,9 @@ class Solution {
             int curr[] = pq.poll();
             int i = curr[0];
             int j = curr[1];
-            if(i == n-1 && j ==m-1)min = Math.min(min,dist[i][j]);
             int d = curr[2];
+            if(i == n-1 && j ==m-1)return d;
+            
             for(int k=0;k<8;k++)
             {
                 int nrow = i+drow[k];
@@ -29,6 +30,6 @@ class Solution {
                 }
             }
         }
-        return (min == Integer.MAX_VALUE)?-1:min;
+        return  -1;
     }
 }
