@@ -12,7 +12,7 @@ class Solution {
         if(dp[i][j] != -1)return dp[i][j];
         if(t1.charAt(i) == t2.charAt(j))
         {
-            return 1+help(i-1,j-1,t1,t2,dp);
+            return dp[i][j] = 1+help(i-1,j-1,t1,t2,dp);
         }
         return dp[i][j] = Math.max(help(i-1,j,t1,t2,dp),help(i,j-1,t1,t2,dp));
     }
