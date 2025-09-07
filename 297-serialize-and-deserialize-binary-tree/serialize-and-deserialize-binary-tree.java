@@ -8,9 +8,8 @@
  * }
  */
 public class Codec {
-
-    // Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
+    public String serialize(TreeNode root) 
+    {
         if(root == null)return "#";
         StringBuilder ob = new StringBuilder();
         Queue<TreeNode> que = new LinkedList<>();
@@ -26,38 +25,32 @@ public class Codec {
             }
 
         }
-        
         return ob.toString();
     }
+    public TreeNode deserialize(String data) 
+    {
+        if (data.equals("#")) return null;
 
-    
-    public TreeNode deserialize(String data) {
-         if (data == null || data.length() == 0 || data.equals("#")) {
-            return null;
+        String[] values = data.split(",");
+        TreeNode root = new TreeNode(Integer.parseInt(values[0]));
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        int i = 1;
+        while (!queue.isEmpty() && i < values.length) {
+            TreeNode curr = queue.poll();
+            if (!values[i].equals("#")) {
+                curr.left = new TreeNode(Integer.parseInt(values[i]));
+                queue.offer(curr.left);
+            }
+            i++;
+            if (i < values.length && !values[i].equals("#")) {
+                curr.right = new TreeNode(Integer.parseInt(values[i]));
+                queue.offer(curr.right);
+            }
+            i++;
         }
-          String arr[] = data.split(",");
-          int n = arr.length;
-          int i = 1;
-          Queue<TreeNode> que = new LinkedList<>();
-          TreeNode root = new TreeNode(Integer.parseInt(arr[0]));
-          que.offer(root);
-          while(que.size() > 0 && i < arr.length)
-          {
-            TreeNode curr = que.poll();
-            if(i != n && !arr[i].equals("#")){
-                TreeNode left = new TreeNode(Integer.parseInt(arr[i]));
-                curr.left = left;
-                que.offer(left);
-            }
-            i++;
-             if(i != n && !arr[i].equals("#")){
-                TreeNode right = new TreeNode(Integer.parseInt(arr[i]));
-                curr.right = right;
-                que.offer(right);
-            }
-            i++;
-          }
-          return root;
+        return root;
     }
 }
 
