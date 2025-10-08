@@ -1,19 +1,36 @@
 class Solution {
     public int maxSubArray(int[] nums) {
-        int n = nums.length;
-        int sum = 0;
-        int max = Integer.MIN_VALUE;
-        for(int i=0;i<n;i++)
-        {
-            sum += nums[i];
-            if(sum > max)
-            {
-                max = Math.max(max,sum);
-            }
-            if(sum < 0){
-                sum = 0;
-            }
+        return maxSubArrayDivide(nums, 0, nums.length - 1);
+    }
+
+    private int maxSubArrayDivide(int[] nums, int left, int right) {
+        if (left == right) {
+            return nums[left];
         }
-        return max;
+
+        int mid = left + (right - left) / 2;
+
+        int leftMax = maxSubArrayDivide(nums, left, mid);
+        int rightMax = maxSubArrayDivide(nums, mid + 1, right);
+        int crossMax = maxCrossingSum(nums, left, mid, right);
+
+        return Math.max(Math.max(leftMax, rightMax), crossMax);
+    }
+
+    private int maxCrossingSum(int[] nums, int left, int mid, int right) {
+        int sum = 0;
+        int leftSum = Integer.MIN_VALUE;
+        for (int i = mid; i >= left; i--) {
+            sum += nums[i];
+            if (sum > leftSum) leftSum = sum;
+        }
+
+        sum = 0;
+        int rightSum = Integer.MIN_VALUE;
+        for (int i = mid + 1; i <= right; i++) {
+            sum += nums[i];
+            if (sum > rightSum) rightSum = sum;
+        }
+        return leftSum + rightSum;
     }
 }
