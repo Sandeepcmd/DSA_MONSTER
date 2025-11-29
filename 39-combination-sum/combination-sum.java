@@ -15,6 +15,7 @@ class Solution {
         }
         for(int i=idx;i<arr.length;i++)
         {
+            if(i>idx && arr[i] == arr[i-1])continue;
             temp.add(arr[i]);
             help(i,list,temp,arr,target-arr[i]);
             temp.remove(temp.size()-1);
