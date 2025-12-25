@@ -10,9 +10,9 @@ class Solution {
         while(pq.size() > 0 && i < k)
         {
             int ele = pq.remove()-i;
-            int add = (ele < 0)?0:ele;
-            if(add < 0)break;
-            ans = ans + (long)add;
+
+            if(ele < 0)break;
+            ans = ans + (long)ele;
             i++;
         }
         return ans;
