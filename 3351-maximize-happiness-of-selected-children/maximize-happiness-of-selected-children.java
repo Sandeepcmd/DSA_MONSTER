@@ -11,6 +11,7 @@ class Solution {
         {
             int ele = pq.remove()-i;
             int add = (ele < 0)?0:ele;
+            if(add < 0)break;
             ans = ans + (long)add;
             i++;
         }
