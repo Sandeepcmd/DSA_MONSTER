@@ -1,18 +1,16 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int n = nums.length;
+        int ans = 0;
         HashMap<Integer,Integer> map = new HashMap<>();
         map.put(0,1);
-        int ans = 0;
-        int curr = 0;
-        for(int i=0;i<n;i++)
-        {
-             curr += nums[i];
-            if(map.containsKey(curr-k))
-            {
-                ans += map.get(curr-k);
+        int currSum = 0;
+        for(int i=0;i<n;i++){
+            currSum += nums[i];
+            if(map.containsKey(currSum-k)){
+                ans += map.get(currSum-k);
             }
-            map.put(curr,map.getOrDefault(curr,0)+1);
+            map.put(currSum,map.getOrDefault(currSum,0)+1);
         }
         return ans;
     }
